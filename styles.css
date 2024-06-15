@@ -17,89 +17,62 @@
     height: auto;
 }
 
-.input-div{
+.output-division, .input-division{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    height: auto;
+    grid-row-gap: 20px;
+    grid-column: 20px;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-    height: 40px;
+}
+
+.displayed-task{
+    width: 200px;
+    margin-bottom: 10px;
     display: flex;
-    margin-left: 110px;
-    margin-right: 110px;
-    justify-content: center;
     align-items: center;
-}
-
-.output-div{
-    height: auto;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-}
 
-.addButton{
-    height: 40px;
-    width: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: rgb(0, 128, 0);
+}
+.displayed-date{
+    width: 200px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}  
+
+.submit-button{
+    width: 70px;
+    padding: 7px;
+    background-color: seagreen;
     border: none;
     color: white;
+    
 }
 
-.deleteButton{
-    height: 40px;
-    width: 80px;
-    margin-left: 12px;
-    margin-right: 5px;
-    background-color: red;
-    border: none;
+.delete-button{
+    margin-bottom: 10px;
+    width: 70px;
+    background-color: rgba(255, 0, 0, 0.785);
     color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    padding: 7px;
+
+}   
+
+.input-text, .input-date{
+    width: 180px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3px;
-}
-
-.todo-date-input {
-    height: 36px;
-    width: 150px;
-}
-
-.todo-text-input{
-    height: 36px;
-    width: 150px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.todo-display{
-    height: 40px;
-    width: 160px;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 3px;
-
-}
-
-.date-display{
-    height: 40px;
-    width: 150px;
-    margin-left: 10px ;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 3px;
-
-}
-
-
-.name-output{
-    background-color: aquamarine;
-    width: 158px;
-    height: auto;
 }
 
 button:active{
-    opacity: 0.5;
+    opacity: 0.8;
 }
